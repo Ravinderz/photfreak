@@ -1,0 +1,10 @@
+com\photofreak\web\service\UserService.class
+com\photofreak\web\service\UserServiceImpl.class
+com\photofreak\config\PhotoFreakWebInitializer.class
+com\photofreak\web\model\User.class
+com\photofreak\web\dao\UserDAOImpl.class
+com\photofreak\config\WebConfig.class
+com\photofreak\web\dao\UserDAO.class
+com\photofreak\config\HibernateConfig.class
+com\photofreak\config\RootConfig.class
+com\photofreak\web\controllers\InitialController.class
