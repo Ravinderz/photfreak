@@ -3,10 +3,12 @@ package com.photofreak.web.controllers;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
-import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -29,15 +31,20 @@ public class InitialController {
 		return "welcome";
 	}
 	
+	@RequestMapping(value="/register", method=GET)
+	public String signUp(Model model){
+		model.addAttribute("user", new User());
+		return "signup";
+	}
+	
 	@RequestMapping(value="/register", method=POST)
-	public String signUp(HttpServletRequest req){
-		User user = new User();
-		System.out.println((String)req.getAttribute("fname"));
-		user.setFirstName((String)req.getAttribute("fname"));
-		user.setLastName((String)req.getAttribute("lname"));
-		user.setUsername((String)req.getAttribute("username"));
-		user.setPassword((String)req.getAttribute("pword"));
+	public String signUp(@Valid User user, BindingResult result,Model model){
+		
+		if(result.hasErrors()){
+			return "signup";
+		}
 		userService.saveUser(user);
+		model.addAttribute("User",user);
 		return "welcome";
 	}
 	
