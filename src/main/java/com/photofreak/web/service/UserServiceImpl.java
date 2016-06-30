@@ -17,4 +17,8 @@ public class UserServiceImpl implements UserService{
 	public void saveUser(User user){
 		dao.saveUser(user);
 	}
+	
+	public boolean authenticateUser(User user){
+		return dao.authenticateUser(user);
+	}
 }

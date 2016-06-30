@@ -4,5 +4,7 @@ import com.photofreak.web.model.User;
 
 public interface UserDAO {
 
-	void saveUser(User user);	
+	void saveUser(User user);
+	
+	boolean authenticateUser(User user);
 }

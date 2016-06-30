@@ -26,9 +26,27 @@ public class InitialController {
 		return "home";
 	}
 	
+	@RequestMapping(value="/authenticate" , method=GET)
+	public String login(Model model){
+		model.addAttribute("user" ,new User());
+		model.addAttribute("error",false);
+		return "login";
+	}
+	
 	@RequestMapping(value="/authenticate" , method=POST)
-	public String login(){
-		return "welcome";
+	public String login(@Valid User user, BindingResult result,Model model){
+		if(result.hasErrors()){
+			return "login";
+		}
+		boolean isUserValid = userService.authenticateUser(user);
+		System.out.println(isUserValid);
+		if(isUserValid){
+			model.addAttribute("User",user);
+			model.addAttribute("error",false);
+			return "welcome";
+		}
+		model.addAttribute("error", true);
+		return "login";
 	}
 	
 	@RequestMapping(value="/register", method=GET)

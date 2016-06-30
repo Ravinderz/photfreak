@@ -5,4 +5,6 @@ import com.photofreak.web.model.User;
 public interface UserService {
 
 	void saveUser(User user);
+	
+	boolean authenticateUser(User user);
 }

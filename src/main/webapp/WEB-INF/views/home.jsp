@@ -10,6 +10,6 @@
 <h1 align="center">PhotoFreak</h1>
 <p>An App for sharing your photos,memories</p>
 
-<a  href="/PhotoFreak/register">signup</a><a href="/PhotoFreak/signin">Login</a>
+<a  href="/PhotoFreak/register">signup</a><a href="/PhotoFreak/authenticate">Login</a>
 </body>
 </html>

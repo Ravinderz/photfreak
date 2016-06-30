@@ -33,7 +33,7 @@ public class HibernateConfig {
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/photofreak");
 		dataSource.setUsername("root");
-		dataSource.setPassword("letmein");
+		dataSource.setPassword("root");//Change this value to appropriate value when using at other system
 		return dataSource;
 	}
 	
@@ -43,6 +43,7 @@ public class HibernateConfig {
 		properties.put("hibernate.show_sql", "true");
 		properties.put("hibernate.format_sql", "true");
 		properties.put("hibernate.id.new_generator_mappings", "false");
+		properties.put("hibernate.hbm2ddl.auto","update");
 		return properties;
 	}
 	
