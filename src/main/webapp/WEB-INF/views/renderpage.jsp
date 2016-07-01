@@ -10,7 +10,7 @@
 <body>
 <table>
 <tr>
-<td><img src="/PhotoFreak/images/jmm-cosmoknight.jpg" height = 500px width= 650px /></td><td><img src="/PhotoFreak/images/jmm-gothamschampion.jpg" height = 500px width= 650px /></td>
+<td><img src="/PhotoFreak/images/jmm-cosmoknight.jpg" /></td><td><img src="/PhotoFreak/images/jmm-gothamschampion.jpg" height = 500px width= 650px /></td>
 </tr>
 <tr>
 <td><img src="/PhotoFreak/images/WP_Lightning_Legend.jpg" height = 500px width= 650px /></td><td><img src="/PhotoFreak/images/WP_Wallcrawler.jpg" height = 500px width= 650px /></td>
