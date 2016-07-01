@@ -1,0 +1,8 @@
+For photofreak,..
+get the md5 encryption for password done in hosteldepot.
+create a div tag inside the welcome page to show the images.
+implement a upload image module to upload user images.
+implement rating functionality for the images.
+implement search functionality which could search based on image names,tags,size,resolution,recently uploaded.
+implement a user profile module with all the user specific details, such as username picture and all, the images uploaded, rating received etc,..
+implement comment system for the image(if necessary,.....)
