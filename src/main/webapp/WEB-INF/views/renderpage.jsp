@@ -10,13 +10,13 @@
 <body>
 <table>
 <tr>
-<td><img src="/PhotoFreak/images/jmm-cosmoknight.jpg" /></td><td><img src="/PhotoFreak/images/jmm-gothamschampion.jpg" height = 500px width= 650px /></td>
+<td><img src="/PhotoFreak/images/jmm-cosmoknight.jpg" /></td><td><img src="/PhotoFreak/images/jmm-gothamschampion.jpg"  /></td>
 </tr>
 <tr>
-<td><img src="/PhotoFreak/images/WP_Lightning_Legend.jpg" height = 500px width= 650px /></td><td><img src="/PhotoFreak/images/WP_Wallcrawler.jpg" height = 500px width= 650px /></td>
+<td><img src="/PhotoFreak/images/WP_Lightning_Legend.jpg"  /></td><td><img src="/PhotoFreak/images/WP_Wallcrawler.jpg"  /></td>
 </tr>
 <tr>
-<td><img src="/PhotoFreak/images/WP_Midnight_Warrior.jpg" height = 500px width= 650px /></td><td><img src="/PhotoFreak/images/WP_Winterborn.jpg" height = 500px width= 650px /></td>
+<td><img src="/PhotoFreak/images/WP_Midnight_Warrior.jpg"  /></td><td><img src="/PhotoFreak/images/WP_Winterborn.jpg"  /></td>
 </tr>
 </table>
 </body>

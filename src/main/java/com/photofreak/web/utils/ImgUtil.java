@@ -21,7 +21,11 @@ public class ImgUtil {
 			String thumbnailImgPath = imgPath.substring(0,imgPath.lastIndexOf("\\"));
 			String imgName = imgPath.substring(imgPath.lastIndexOf("\\")+1);
 			imgName = imgName.substring(0,imgName.lastIndexOf("."));
-			thumbnailImgPath = thumbnailImgPath +  "\\" + imgName + "_thumbnail.png";
+			File thumbnailDir = new File(thumbnailImgPath+"\\thumbnail");
+			if(!thumbnailDir.exists()){
+				thumbnailDir.mkdir();
+			}
+			thumbnailImgPath = thumbnailDir.getPath() +  "\\" + imgName + "_thumbnail.png";
 			File thumbnailFile = new File(thumbnailImgPath);
 			if(!thumbnailFile.exists()){
 				thumbnailFile.createNewFile();

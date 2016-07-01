@@ -16,28 +16,28 @@ public class Image {
 	@Column(name = "IMAGEID")
 	public int imageId;
 	
-	@Column(name="IMAGENAME")
+	@Column(name="IMAGENAME",nullable=false)
 	public String imageName;
 	
-	@Column(name="IMAGEDESC")
+	@Column(name="IMAGEDESC",nullable=false)
 	public String imageDesc;
 	
-	@Column(name="IMAGEPATH")
+	@Column(name="IMAGEPATH",nullable=false)
 	public String imagePath;
 	
-	@Column(name="IMAGETAG")
+	@Column(name="IMAGETAG",nullable=false)
 	public String imageTag;
 	
-	@Column(name="IMAGECATEGORY")
+	@Column(name="IMAGECATEGORY",nullable=false)
 	public String imageCategory;
 	
-	@Column(name="IMAGEcONTRIBUTOR")
+	@Column(name="IMAGECONTRIBUTOR",nullable=false)
 	public String imageContributor;
 	
-	@Column(name="IMAGEUPLOADEDTIME")
+	@Column(name="IMAGEUPLOADEDTIME",nullable=false)
 	public String imageUploadedTime;
 	
-	@Column(name="IMAGERATING")
+	@Column(name="IMAGERATING",nullable=false)
 	public String imageRating;
 	
 	

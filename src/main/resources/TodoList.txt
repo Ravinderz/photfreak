@@ -6,3 +6,17 @@ implement rating functionality for the images.
 implement search functionality which could search based on image names,tags,size,resolution,recently uploaded.
 implement a user profile module with all the user specific details, such as username picture and all, the images uploaded, rating received etc,..
 implement comment system for the image(if necessary,.....)
+
+
+ create table ImageDetails (
+        IMAGEID integer not null auto_increment,
+        IMAGECATEGORY varchar(255) not null,
+        IMAGECONTRIBUTOR varchar(255) not null,
+        IMAGEDESC varchar(255) not null,
+        IMAGENAME varchar(255) not null,
+        IMAGEPATH varchar(255) not null,
+        IMAGERATING varchar(255) not null,
+        IMAGETAG varchar(255) not null,
+        IMAGEUPLOADEDTIME varchar(255) not null,
+        primary key (IMAGEID)
+    )
